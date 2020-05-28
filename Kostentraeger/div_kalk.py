@@ -8,15 +8,15 @@ aufgelaufene_stufenkosten = []
 aufgelaufene_kosten = []
 
 for i in range(num_fertigungsstufen):
-    einsatzmenge.append(float(input(f"Einsatzmenge in Stufe {i+1}:")))
+    einsatzmenge.append(float(input("Einsatzmenge in Stufe {}:".format(i+1))))
     
 for i in range(num_fertigungsstufen):
-    ausbringungsmenge.append(float(input(f"Ausbringungsmenge in Stufe {i+1}:")))
+    ausbringungsmenge.append(float(input("Ausbringungsmenge in Stufe {}:".format(i+1))))
     
 rohstoffkosten = float(input("Rohstoffkosten: "))
 
 for i in range(num_fertigungsstufen):
-    stufenkosten.append(float(input(f"Stufenkosten der Stufe {i+1}:")))
+    stufenkosten.append(float(input("Stufenkosten der Stufe {}:".format(i+1))))
     
 vuv = float(input("Vertriebs und Verwaltungskosten (pro Stück!): "))
 

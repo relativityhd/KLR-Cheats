@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.DS_Store
+Umlageverfahren/~$IterativesVerfahren.xlsx
+Umlageverfahren/~$TreppenBlockumlage.xlsx
