@@ -1,9 +1,10 @@
-TN = float(input('Vorhergesgt: Falsch, tatsaechlich falsch '))
-FN = float(input('Vorhergesagt: Falsch, tatsaechlich richtig '))
-FP = float(input('Vorhergesagt: richtig, tasaechlich falsch ' ))
-TP = float(input('Vorhergesagt: richtig, tasaechlich richtig '))
-N = float(TN + FP)
-P = float(FN + TP)
+print("\n{:^14}|{:^14}\n{}".format('Vorhergesagt', 'Tatsaechlich', '-'*28))
+TN = float(input("{:^14}|{:^14}: ".format('Falsch', 'Falsch'))) # True Negative
+FN = float(input("{:^14}|{:^14}: ".format('Falsch', 'Richtig'))) # False Negative
+FP = float(input("{:^14}|{:^14}: ".format('Richtig', 'Falsch'))) # False Positive
+TP = float(input("{:^14}|{:^14}: ".format('Richtig', 'Richtig'))) # True Positive
+N = float(TN + FP) # All Negatives
+P = float(FN + TP) # All Positives
 n = TN + FN +  FP + TP
 
 print("\n n = {:^15}| Vorhergesgt: Falsch | Vorhergesagt: richtig | Summe".format(n))
